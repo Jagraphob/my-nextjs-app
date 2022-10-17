@@ -1,9 +1,19 @@
 import React from 'react'
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div>navbar</div>
+    <nav className='navbar is-black' role='navigation' aria-label="main navigation">
+        
+        <div className='navbar-menu'>
+            <div className='navbar-start'>
+                <div className='navbar-item'>Randoms</div>
+            </div>
+            <div className='navbar-end'>
+                <a className='navbar-item' href="#">Login</a>
+            </div>
+        </div>
+    </nav>
   )
 }
 
-export default navbar
+export default Navbar

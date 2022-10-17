@@ -1,9 +1,10 @@
 import React from 'react'
+import type { NextPage } from 'next'
 
-const wolfOfBrandonStreet = () => {
+const WolfOfBrandonStreet: NextPage = () => {
   return (
     <div>wolf-of-brandon-street</div>
   )
 }
 
-export default wolfOfBrandonStreet
+export default WolfOfBrandonStreet

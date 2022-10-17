@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Children } from 'react'
 import { ReactNode } from 'react'
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Home.module.scss'
+import Navbar from './navbar';
 
 type Props = {
   children?: ReactNode
 }
 
-
-const layout = ({ children }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ const layout = ({ children }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>Nav Bar</div>
+      <Navbar></Navbar>
       <main className={styles.main}>
         {children}
       </main>
@@ -28,4 +28,4 @@ const layout = ({ children }: Props) => {
   )
 }
 
-export default layout
+export default Layout
